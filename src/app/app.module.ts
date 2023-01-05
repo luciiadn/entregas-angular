@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesModule } from './pages/pages.module';
 import { DashboardLayoutComponent } from './Layouts/dashboard-layout/dashboard-layout.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,11 +15,13 @@ import { DashboardLayoutComponent } from './Layouts/dashboard-layout/dashboard-l
     BrowserModule,
     BrowserAnimationsModule,
     PagesModule,
-    
+    AppRoutingModule,
   
     
-    
+
   ],
+
+
   providers: [],
   bootstrap: [AppComponent]
 })
