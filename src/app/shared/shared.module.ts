@@ -11,6 +11,11 @@ import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { HpPagesComponent } from '../pages/hp-pages/hp-pages.component';
+import { StreetPageComponent } from '../pages/street-page/street-page.component';
+import { LayoutsModule } from '../Layouts/layouts.module';
+import { DashboardLayoutComponent } from '../Layouts/dashboard-layout/dashboard-layout.component';
+
 
 
 
@@ -19,10 +24,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   declarations: [
     Elementos1Component,
     Elementos2Component,
-    Elementos3Component
+    Elementos3Component,
+    
+    
+    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HpPagesComponent,
+    StreetPageComponent,
+    
+
     
   ],
   exports: [
@@ -37,6 +49,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatTableModule,
     MatToolbarModule,
     ReactiveFormsModule,
+    
+    
 
   ]
 })

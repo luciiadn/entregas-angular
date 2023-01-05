@@ -5,13 +5,15 @@ import { StreetPageComponent } from './street-page/street-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { HpPagesComponent } from './hp-pages/hp-pages.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardLayoutComponent } from '../Layouts/dashboard-layout/dashboard-layout.component';
 
 
 
 @NgModule({
   declarations: [
     StreetPageComponent,
-    HpPagesComponent
+    HpPagesComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -19,10 +21,14 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     ReactiveFormsModule,
     
+    
   ], 
   exports: [
     StreetPageComponent,
-    HpPagesComponent
-  ]
+    HpPagesComponent,
+    DashboardLayoutComponent
+    
+
+    ]
 })
 export class PagesModule { }

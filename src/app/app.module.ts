@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesModule } from './pages/pages.module';
+import { DashboardLayoutComponent } from './Layouts/dashboard-layout/dashboard-layout.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,10 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     BrowserAnimationsModule,
     PagesModule,
+    
+  
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
