@@ -6,15 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesModule } from './pages/pages.module';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutsModule } from './Layouts/layouts.module';
-import { StudentsPageComponent } from './pages/student-list/student-list.component';
-import { StudentModalComponent } from './shared/components/student-modal/student-modal.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    StudentsPageComponent,
-    StudentModalComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -22,10 +16,9 @@ import { StudentModalComponent } from './shared/components/student-modal/student
     ReactiveFormsModule,
     AppRoutingModule,
     LayoutsModule,
-   
-],
+  ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

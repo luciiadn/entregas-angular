@@ -15,8 +15,7 @@ import { RouterModule } from '@angular/router';
   declarations: [
     StreetPageComponent,
     HpPagesComponent,
-    StudentListComponent,
-    
+    StudentListComponent,  
   ],
   imports: [
     CommonModule,

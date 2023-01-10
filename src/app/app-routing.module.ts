@@ -13,21 +13,21 @@ const routes: Routes = [{
    component: DashboardLayoutComponent,
 
    children: [{
-    path: 'students',
+    path: 'hp-pages',
     component: HpPagesComponent,
 },
 {
-  path: 'lista',
+  path: 'student-list',
   component: StudentListComponent,
 }
 ]
-},
+},  
 {
   path: 'main',
   component: MainLayoutComponent,
 },
 {
-  path: '***',
+  path: '**',
   component: NotFoundComponent,
 }
 
