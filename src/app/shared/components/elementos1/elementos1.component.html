@@ -1,8 +1,18 @@
 <main class="header">
+    
     <div class="containerHeader">
-        <p class="tittle">
-            Las casas se dividen en {{trafficLightService.ligths$ | async}}
-        </p>
+        <div>
+            <a class="logo">
+                <img src="https://1000marcas.net/wp-content/uploads/2020/02/Logo-Hogwarts.png" alt="Logo" width="150" height="74" class="d-inline">
+            </a>
+        </div>
+        <div>
+            <span class="texto-borde">Bienvenidos</span>
+            <p class="tittle">
+                Alumnos de {{trafficLightService.ligths$ | async}}
+            </p>
+        </div>
+        
     </div>    
 </main>
 

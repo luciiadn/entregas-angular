@@ -5,7 +5,9 @@ import { StreetPageComponent } from './street-page/street-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { HpPagesComponent } from './hp-pages/hp-pages.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DashboardLayoutComponent } from '../Layouts/dashboard-layout/dashboard-layout.component';
+import { StudentListComponent } from './student-list/student-list.component';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -13,22 +15,20 @@ import { DashboardLayoutComponent } from '../Layouts/dashboard-layout/dashboard-
   declarations: [
     StreetPageComponent,
     HpPagesComponent,
+    StudentListComponent,
     
   ],
   imports: [
     CommonModule,
     SharedModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    
-    
+    ReactiveFormsModule, 
+    RouterModule,
   ], 
   exports: [
     StreetPageComponent,
     HpPagesComponent,
-    DashboardLayoutComponent
-    
-
+    StudentListComponent,
     ]
 })
 export class PagesModule { }
