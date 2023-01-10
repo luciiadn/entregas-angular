@@ -16,7 +16,6 @@ import { RouterModule } from '@angular/router';
     StreetPageComponent,
     HpPagesComponent,
     StudentListComponent,
-    
   ],
   imports: [
     CommonModule,

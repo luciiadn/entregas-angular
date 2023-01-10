@@ -13,6 +13,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
 import { StudentModalComponent } from './components/student-modal/student-modal.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -22,11 +24,13 @@ import { StudentModalComponent } from './components/student-modal/student-modal.
     Elementos2Component,
     NotFoundComponent,
     StudentModalComponent,
-    
-    
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatDialogModule,
     RouterModule,
   ],
   exports: [
@@ -40,6 +44,7 @@ import { StudentModalComponent } from './components/student-modal/student-modal.
     MatListModule,
     MatTableModule,
     MatToolbarModule,
-    ReactiveFormsModule,]
+    ReactiveFormsModule,
+  ]
 })
 export class SharedModule { }

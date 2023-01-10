@@ -19,7 +19,6 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
     SharedModule,
     PagesModule,
     RouterModule,
-   
   ], exports:[
     DashboardLayoutComponent,
   ]
