@@ -12,6 +12,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { RouterModule } from '@angular/router';
+import { StudentModalComponent } from './components/student-modal/student-modal.component';
 
 
 
@@ -20,6 +21,7 @@ import { RouterModule } from '@angular/router';
     Elementos1Component,
     Elementos2Component,
     NotFoundComponent,
+    StudentModalComponent,
     
     
   ],

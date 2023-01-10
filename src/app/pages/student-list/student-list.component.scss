@@ -1,5 +1,25 @@
-p{
-    color: black;
-    font-size: 30px;
+.btn{
+    width: 100%;
     text-align: center;
+}
+
+.nuevoEstudiante {
+    width: 300px;
+    margin: 10px;
+}
+
+.tittleContainer{
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+    
+}
+.tittle{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+
 }
