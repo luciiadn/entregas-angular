@@ -4,11 +4,11 @@ import { Student } from 'src/app/model/student-model';
 import { StudentModalComponent } from 'src/app/shared/components/student-modal/student-modal.component';
 
 @Component({
-  selector: 'app-students-page',
-  templateUrl: './students-page.component.html',
-  styleUrls: ['./students-page.component.scss']
+  selector: 'app-students-list',
+  templateUrl: './student-list.component.html',
+  styleUrls: ['./student-list.component.scss']
 })
-export class StudentsPageComponent {
+export class StudentListComponent {
   students: Student[] = [
     new Student(1, 'Harry', 'Potter', true, '12', '80'),
     new Student(2, 'Hermione', 'Granger', true, '1','100' ),

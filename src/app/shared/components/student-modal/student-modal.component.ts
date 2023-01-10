@@ -1,8 +1,8 @@
 import { Component, Inject, inject } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { DialogRef } from '@angular/cdk/dialog';
-import { Student } from 'src/app/models/student-model';
 import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { Student } from 'src/app/model/student-model';
 
 
 @Component({

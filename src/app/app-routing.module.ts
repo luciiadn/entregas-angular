@@ -27,7 +27,7 @@ const routes: Routes = [{
   component: MainLayoutComponent,
 },
 {
-  path: '***',
+  path: '**',
   component: NotFoundComponent,
 }
 
