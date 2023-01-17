@@ -1,39 +1,30 @@
 <main>
   <div class="tittleContainer">
-    <p class="tittle">LISTADO DE ALUMNOS</p>
+    <p class="tittle">LISTADO DE CURSOS</p>
   </div>
-
-  <div class="studentTable">
-    <table mat-table [dataSource]="students">
+  <div class="coursesTable">
+    <table mat-table [dataSource]="courses">
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef>No.</th>
         <td mat-cell *matCellDef="let element">{{ element.id }}</td>
       </ng-container>
-      <ng-container matColumnDef="firstName">
-        <th mat-header-cell *matHeaderCellDef>Nombre</th>
-        <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+      <ng-container matColumnDef="profesor">
+        <th mat-header-cell *matHeaderCellDef>Profesor</th>
+        <td mat-cell *matCellDef="let element">{{ element.profesor }}</td>
       </ng-container>
-      <ng-container matColumnDef="lastName">
-        <th mat-header-cell *matHeaderCellDef>Apellido</th>
-        <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+      <ng-container matColumnDef="materia">
+        <th mat-header-cell *matHeaderCellDef>Materia</th>
+        <td mat-cell *matCellDef="let element">{{ element.materia }}</td>
       </ng-container>
-      <ng-container matColumnDef="isActive">
-        <th mat-header-cell *matHeaderCellDef>Estudia</th>
-        <td mat-cell *matCellDef="let element">{{ element.isActive }}</td>
-      </ng-container>
-      <ng-container matColumnDef="absence">
-        <th mat-header-cell *matHeaderCellDef>Ausencias</th>
-        <td mat-cell *matCellDef="let element">{{ element.absence }}</td>
-      </ng-container>
-      <ng-container matColumnDef="notes">
-        <th mat-header-cell *matHeaderCellDef>Notas</th>
-        <td mat-cell *matCellDef="let element">{{ element.notes }}</td>
+      <ng-container matColumnDef="timos">
+        <th mat-header-cell *matHeaderCellDef>TIMOS</th>
+        <td mat-cell *matCellDef="let element">{{ element.timos }}</td>
       </ng-container>
       <ng-container matColumnDef="edit">
         <th mat-header-cell *matHeaderCellDef>editar</th>
         <td mat-cell *matCellDef="let element">
           <button
-            (click)="editStudent(element)"
+            (click)="editCourse(element)"
             mat-icon-button
             color="primary"
           >
@@ -45,7 +36,7 @@
         <th mat-header-cell *matHeaderCellDef>Quitar</th>
         <td mat-cell *matCellDef="let element">
           <button
-            (click)="removeStudent(element)"
+            (click)="removeCourse(element)"
             mat-icon-button
             color="primary"
           >
@@ -53,20 +44,18 @@
           </button>
         </td>
       </ng-container>
-
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
   </div>
-
   <div class="btn">
     <button
-      class="nuevoEstudiante"
-      (click)="addStudent()"
+      class="nuevoCurso"
+      (click)="addCourse()"
       mat-flat-button
       color="primary"
     >
-      Nuevo estudiante
+      Nuevo curso
     </button>
   </div>
 </main>

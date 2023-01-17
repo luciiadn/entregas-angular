@@ -7,6 +7,7 @@ import { HpPagesComponent } from './hp-pages/hp-pages.component';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentListComponent } from './student-list/student-list.component';
 import { RouterModule } from '@angular/router';
+import { CoursesPageComponent } from './courses-page/courses-page.component';
 
 
 
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
   declarations: [
     StreetPageComponent,
     HpPagesComponent,
-    StudentListComponent,  
+    StudentListComponent,
+    CoursesPageComponent,
   ],
   imports: [
     CommonModule,
@@ -28,6 +30,7 @@ import { RouterModule } from '@angular/router';
     StreetPageComponent,
     HpPagesComponent,
     StudentListComponent,
+    CoursesPageComponent,
     ]
 })
 export class PagesModule { }

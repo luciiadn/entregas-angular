@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { Student } from 'src/app/model/student-model';
+import { Student } from 'src/app/core/models/student-model';
 import { StudentModalComponent } from 'src/app/shared/components/student-modal/student-modal.component';
 
 @Component({
