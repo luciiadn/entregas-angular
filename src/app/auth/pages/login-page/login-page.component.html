@@ -7,22 +7,24 @@
       <mat-card-content>
         <form class="flex flex-column" [formGroup]="form">
           <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
+            <mat-label>Outline form field</mat-label>
             <input
               formControlName="email"
               type="email"
               matInput
-              placeholder="Email"
+              placeholder="Placeholder"
             />
+            <mat-icon matSuffix>email</mat-icon>
           </mat-form-field>
           <mat-form-field appearance="outline">
-            <mat-label>Contraseña</mat-label>
+            <mat-label>Outline form field</mat-label>
             <input
               formControlName="password"
               type="password"
               matInput
-              placeholder="Contraseña"
+              placeholder="Placeholder"
             />
+            <mat-icon matSuffix>key</mat-icon>
           </mat-form-field>
         </form>
       </mat-card-content>
@@ -37,7 +39,5 @@
         </button>
       </mat-card-actions>
     </mat-card>
-
   </div>
-  
 </main>

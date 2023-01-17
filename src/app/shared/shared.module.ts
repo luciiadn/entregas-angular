@@ -16,6 +16,7 @@ import { StudentModalComponent } from './components/student-modal/student-modal.
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 
+
 @NgModule({
   declarations: [
     Elementos1Component,

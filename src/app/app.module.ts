@@ -6,10 +6,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesModule } from './pages/pages.module';
 import { AppRoutingModule } from './app-routing.module';
 import { LayoutsModule } from './Layouts/layouts.module';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+
+
+
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,
+    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -17,6 +24,10 @@ import { LayoutsModule } from './Layouts/layouts.module';
     ReactiveFormsModule,
     AppRoutingModule,
     LayoutsModule,
+    MatIconModule,
+    MatToolbarModule,
+  
+
   ],
 
   providers: [],
