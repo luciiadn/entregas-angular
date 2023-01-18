@@ -46,7 +46,7 @@ export class AuthService {
   logOut() {
     localStorage.removeItem('token');
     this.sessionService.setUser(null);
-    this.router.navigate(['auth', 'login']);
+    this.router.navigate(['dasboard']);
   }
 
   verifyToken(): Observable<boolean> {
